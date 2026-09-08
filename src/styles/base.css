@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Manrope", system-ui, sans-serif;
+  color: #17171c;
+  background: #f7f7f5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  --ink: #17171c;
+  --muted: #707078;
+  --soft-muted: #9999a1;
+  --surface: #ffffff;
+  --background: #f7f7f5;
+  --line: #e8e8e5;
+
+  --violet: #7664f5;
+  --cyan: #32b9d2;
+  --orange: #f39a56;
+  --green: #69b987;
+
+  --container: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--background);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: 0;
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(118, 100, 245, 0.28);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: #dcd8ff;
+  color: var(--ink);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.container {
+  width: min(calc(100% - 48px), var(--container));
+  margin-inline: auto;
+}
+
+.route-fallback {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.route-fallback-spinner {
+  width: 22px;
+  height: 22px;
+  display: block;
+  border: 2px solid #e8e8e5;
+  border-top-color: var(--violet);
+  border-radius: 50%;
+  animation: route-fallback-spin 700ms linear infinite;
+}
+
+@keyframes route-fallback-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-fallback-spinner {
+    animation: none;
+  }
+}
