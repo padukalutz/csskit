@@ -1,57 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url><loc>https://YOUR-DOMAIN.com/</loc></url>
+  <!-- Home -->
+  <url>
+    <loc>https://padukalutz.github.io/csskit/</loc>
+  </url>
 
-  <url><loc>https://YOUR-DOMAIN.com/tools</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/tools/box-shadow</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/tools/text-shadow</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/tools/gradient</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/tools/color</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/tools/border-radius</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/tools/filter</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/tools/transform</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/tools/flexbox</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/tools/grid</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/tools/typography</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/tools/button</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/tools/glassmorphism</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/tools/neumorphism</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/tools/animation</loc></url>
+  <!-- Tools -->
+  <url>
+    <loc>https://padukalutz.github.io/csskit/tools</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/tools/box-shadow</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/tools/text-shadow</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/tools/gradient</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/tools/color</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/tools/border-radius</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/tools/filter</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/tools/transform</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/tools/flexbox</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/tools/grid</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/tools/typography</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/tools/button</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/tools/glassmorphism</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/tools/neumorphism</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/tools/animation</loc>
+  </url>
 
-  <url><loc>https://YOUR-DOMAIN.com/resources</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/resources/guides</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/resources/guides/box-shadow</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/resources/guides/gradients</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/resources/guides/flexbox</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/resources/guides/grid</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/resources/guides/border-radius</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/resources/guides/filter</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/resources/guides/transform</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/resources/guides/typography</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/resources/guides/animation</loc></url>
+  <!-- Main Pages -->
+  <url>
+    <loc>https://padukalutz.github.io/csskit/about</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/contact</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/developer</loc>
+  </url>
 
-  <url><loc>https://YOUR-DOMAIN.com/resources/references</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/resources/snippets</loc></url>
+  <!-- Legal -->
+  <url>
+    <loc>https://padukalutz.github.io/csskit/privacy-policy</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/terms</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/disclaimer</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/cookie-policy</loc>
+  </url>
 
-  <url><loc>https://YOUR-DOMAIN.com/resources/inspiration</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/resources/inspiration/minimal-interfaces</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/resources/inspiration/modern-cards</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/resources/inspiration/hero-sections</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/resources/inspiration/navigation</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/resources/inspiration/buttons</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/resources/inspiration/forms</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/resources/inspiration/css-effects</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/resources/inspiration/responsive-layouts</loc></url>
+  <!-- Resources -->
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources</loc>
+  </url>
 
-  <url><loc>https://YOUR-DOMAIN.com/about</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/contact</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/developer</loc></url>
+  <!-- Guides -->
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/guides</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/guides/box-shadow</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/guides/gradients</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/guides/flexbox</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/guides/grid</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/guides/border-radius</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/guides/filter</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/guides/transform</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/guides/typography</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/guides/animation</loc>
+  </url>
 
-  <url><loc>https://YOUR-DOMAIN.com/privacy-policy</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/terms</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/disclaimer</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/cookie-policy</loc></url>
+  <!-- References & Snippets -->
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/references</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/snippets</loc>
+  </url>
+
+  <!-- Inspiration -->
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/inspiration</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/inspiration/minimal-interfaces</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/inspiration/modern-cards</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/inspiration/hero-sections</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/inspiration/navigation</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/inspiration/buttons</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/inspiration/forms</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/inspiration/css-effects</loc>
+  </url>
+  <url>
+    <loc>https://padukalutz.github.io/csskit/resources/inspiration/responsive-layouts</loc>
+  </url>
 
 </urlset>

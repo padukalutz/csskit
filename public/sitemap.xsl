@@ -1,27 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xsl:stylesheet
   version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:s="http://www.sitemaps.org/schemas/sitemap/0.9"
   exclude-result-prefixes="s"
 >
-  <xsl:output method="html" encoding="UTF-8" indent="yes"/>
+
+  <xsl:output
+    method="html"
+    encoding="UTF-8"
+    indent="yes"
+  />
 
   <xsl:template match="/">
+
     <html lang="en">
+
       <head>
+
         <meta charset="UTF-8"/>
+
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         />
 
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
-        
         <title>CSSKit Sitemap</title>
 
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="favicon-32x32.png"
+        />
+
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="favicon-16x16.png"
+        />
+
         <style>
+
           :root {
             --bg: #f7f7f5;
             --surface: #ffffff;
@@ -57,20 +79,13 @@
             text-decoration: none;
           }
 
-          /* =========================================
-             PAGE
-          ========================================= */
-
           .page {
             width: min(100% - 40px, 1120px);
             margin: 0 auto;
             padding: 34px 0 80px;
           }
 
-          /* =========================================
-             BRAND
-             Matches CSSKit Header
-          ========================================= */
+          /* BRAND */
 
           .brand {
             display: inline-flex;
@@ -125,9 +140,7 @@
             color: var(--violet);
           }
 
-          /* =========================================
-             INTRO
-          ========================================= */
+          /* INTRO */
 
           .intro {
             margin-top: 78px;
@@ -150,9 +163,7 @@
             line-height: 1.7;
           }
 
-          /* =========================================
-             META
-          ========================================= */
+          /* META */
 
           .meta {
             display: flex;
@@ -182,9 +193,7 @@
             letter-spacing: 0.04em;
           }
 
-          /* =========================================
-             SITEMAP
-          ========================================= */
+          /* SITEMAP */
 
           .sitemap {
             overflow: hidden;
@@ -276,10 +285,6 @@
             text-transform: uppercase;
           }
 
-          /* =========================================
-             NOTE
-          ========================================= */
-
           .note {
             margin-top: 20px;
             color: var(--muted);
@@ -295,11 +300,10 @@
             line-height: 1.6;
           }
 
-          /* =========================================
-             MOBILE
-          ========================================= */
+          /* MOBILE */
 
           @media (max-width: 700px) {
+
             .page {
               width: min(100% - 28px, 1120px);
               padding-top: 24px;
@@ -342,6 +346,7 @@
           }
 
           @media (max-width: 430px) {
+
             .page {
               width: min(100% - 22px, 1120px);
             }
@@ -352,6 +357,7 @@
 
             .title {
               font-size: 38px;
+              letter-spacing: -2.4px;
             }
 
             .sitemap-head {
@@ -370,18 +376,23 @@
               font-size: 6px;
             }
           }
+
         </style>
+
       </head>
 
       <body>
+
         <main class="page">
 
-          <!-- CSSKIT BRAND -->
+          <!-- CSSKit Brand -->
+
           <a
             class="brand"
-            href="/"
+            href="./"
             aria-label="CSSKit homepage"
           >
+
             <span
               class="brand-mark"
               aria-hidden="true"
@@ -394,34 +405,55 @@
             <span class="brand-name">
               CSS<span>Kit</span>
             </span>
+
           </a>
 
-          <!-- INTRO -->
+          <!-- Intro -->
+
           <section class="intro">
+
             <h1 class="title">
               Sitemap
             </h1>
 
             <p class="description">
-              A complete map of the CSSKit website. Browse all available
-              tools, resources, guides, and pages.
+              A complete map of the CSSKit website.
+              Browse all available tools, resources,
+              guides, and pages.
             </p>
+
           </section>
 
-          <!-- COUNT -->
+          <!-- URL Count -->
+
           <div class="meta">
+
             <span class="count">
-              <xsl:value-of select="count(s:urlset/s:url)"/>
+
+              <xsl:value-of
+                select="count(s:urlset/s:url)"
+              />
+
               <xsl:text> URLs</xsl:text>
+
             </span>
+
           </div>
 
-          <!-- SITEMAP -->
+          <!-- Sitemap Table -->
+
           <section class="sitemap">
 
             <div class="sitemap-head">
-              <span>URL</span>
-              <span>Type</span>
+
+              <span>
+                URL
+              </span>
+
+              <span>
+                Type
+              </span>
+
             </div>
 
             <div class="url-list">
@@ -439,35 +471,47 @@
                     class="url"
                     href="{s:loc}"
                   >
-                    <xsl:value-of select="s:loc"/>
+                    <xsl:value-of
+                      select="s:loc"
+                    />
                   </a>
 
                   <span class="type">
 
                     <xsl:choose>
 
-                      <xsl:when test="contains($url, '/tools/')">
+                      <xsl:when
+                        test="contains($url, '/tools/')"
+                      >
                         Tool
                       </xsl:when>
 
-                      <xsl:when test="contains($url, '/resources/guides/')">
+                      <xsl:when
+                        test="contains($url, '/resources/guides/')"
+                      >
                         Guide
                       </xsl:when>
 
-                      <xsl:when test="contains($url, '/resources/inspiration/')">
+                      <xsl:when
+                        test="contains($url, '/resources/inspiration/')"
+                      >
                         Inspiration
                       </xsl:when>
 
-                      <xsl:when test="contains($url, '/resources/')">
+                      <xsl:when
+                        test="contains($url, '/resources/')"
+                      >
                         Resource
                       </xsl:when>
 
-                      <xsl:when test="
-                        contains($url, '/privacy-policy')
-                        or contains($url, '/terms')
-                        or contains($url, '/disclaimer')
-                        or contains($url, '/cookie-policy')
-                      ">
+                      <xsl:when
+                        test="
+                          contains($url, '/privacy-policy')
+                          or contains($url, '/terms')
+                          or contains($url, '/disclaimer')
+                          or contains($url, '/cookie-policy')
+                        "
+                      >
                         Legal
                       </xsl:when>
 
@@ -488,13 +532,16 @@
           </section>
 
           <p class="note">
-            This sitemap is generated from the XML sitemap used by search
-            engines.
+            This sitemap is generated from the XML sitemap
+            used by search engines.
           </p>
 
         </main>
+
       </body>
+
     </html>
+
   </xsl:template>
 
 </xsl:stylesheet>

@@ -108,7 +108,7 @@ export default function Footer() {
             Cookies
           </NavLink>
 
-          <a href="/sitemap.xml">
+          <a href={`${import.meta.env.BASE_URL}sitemap.xml`}>
             Sitemap
           </a>
         </nav>
