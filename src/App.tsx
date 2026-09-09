@@ -388,7 +388,7 @@ function AppRoutes() {
 
 export default function App() {
   return (
-    <BrowserRouter basename="/csskit">
+    <BrowserRouter>
       <ScrollToTop />
 
       <div className="app-shell">

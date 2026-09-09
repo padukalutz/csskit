@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://padukalutz.github.io/csskit/sitemap.xml
+Sitemap: https://csskit.my.id/sitemap.xml
