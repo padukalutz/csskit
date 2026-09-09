@@ -40,6 +40,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Generate route entry points
+        run: node scripts/generate-routes.mjs
+
       - name: Create SPA fallback
         run: cp dist/index.html dist/404.html
 
